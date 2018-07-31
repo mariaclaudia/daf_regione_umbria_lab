@@ -11914,6 +11914,15 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="img/CoverDAF.png"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Obiettivi:">Obiettivi:<a class="anchor-link" href="#Obiettivi:">&#182;</a></h3><ul>
 <li>illustrare nuovi strumenti e modalità con cui analizzare i dati </li>
 <li>analizzare alcuni dataset attualmente pubblicati sul portale regionale umbro (Strutture ricettive) </li>
@@ -12000,6 +12009,20 @@ a.anchor-link {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#suppress displaying long numbers in scientific notation</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.float_format&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12011,7 +12034,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">strutture</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http://dati.umbria.it/datastore/dump/062d7bd6-f9c6-424e-9003-0b7cb3744cab&quot;</span><span class="p">)</span>
@@ -12032,7 +12055,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">strutture</span>
@@ -12048,7 +12071,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[63]:</div>
+<div class="prompt output_prompt">Out[96]:</div>
 
 
 
@@ -12113,8 +12136,8 @@ a.anchor-link {
       <td>075813749</td>
       <td>www.fontemaggio.it</td>
       <td>info@fontemaggio.it</td>
-      <td>2.327079e+06</td>
-      <td>4.770871e+06</td>
+      <td>2327078.83</td>
+      <td>4770870.82</td>
       <td>16</td>
       <td>74</td>
       <td>17</td>
@@ -12137,8 +12160,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.casalefate.it</td>
       <td>info@casalefate.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>2</td>
       <td>4</td>
       <td>2</td>
@@ -12161,8 +12184,8 @@ a.anchor-link {
       <td>1782219813</td>
       <td>NaN</td>
       <td>casamodestini@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>1</td>
       <td>3</td>
       <td>1</td>
@@ -12185,8 +12208,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>info.acasatua@yahoo.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>2</td>
       <td>3</td>
       <td>2</td>
@@ -12209,8 +12232,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>agricola@nizzi.com</td>
-      <td>2.326766e+06</td>
-      <td>4.771047e+06</td>
+      <td>2326766.01</td>
+      <td>4771047.31</td>
       <td>1</td>
       <td>2</td>
       <td>1</td>
@@ -12233,8 +12256,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>assisiresort1@gmail.com</td>
-      <td>2.333097e+06</td>
-      <td>4.777327e+06</td>
+      <td>2333097.48</td>
+      <td>4777327.43</td>
       <td>20</td>
       <td>35</td>
       <td>20</td>
@@ -12257,8 +12280,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.nizzi.com</td>
       <td>agricola@nizzi.com</td>
-      <td>2.329235e+06</td>
-      <td>4.774595e+06</td>
+      <td>2329234.54</td>
+      <td>4774594.87</td>
       <td>6</td>
       <td>28</td>
       <td>6</td>
@@ -12281,8 +12304,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.agriturismocasanocchia.it</td>
       <td>info@agriturismocasanocchia.it</td>
-      <td>2.330307e+06</td>
-      <td>4.773160e+06</td>
+      <td>2330306.72</td>
+      <td>4773159.98</td>
       <td>4</td>
       <td>10</td>
       <td>4</td>
@@ -12305,8 +12328,8 @@ a.anchor-link {
       <td>075802143</td>
       <td>www.agriturismocasanuova.it</td>
       <td>info@agriturismocasanuova.it</td>
-      <td>2.329929e+06</td>
-      <td>4.775384e+06</td>
+      <td>2329929.06</td>
+      <td>4775384.03</td>
       <td>5</td>
       <td>10</td>
       <td>5</td>
@@ -12329,8 +12352,8 @@ a.anchor-link {
       <td>0758019010</td>
       <td>www.agriturismocolcacione.it</td>
       <td>colcacione@gmail.com</td>
-      <td>2.330887e+06</td>
-      <td>4.773296e+06</td>
+      <td>2330886.55</td>
+      <td>4773295.99</td>
       <td>6</td>
       <td>13</td>
       <td>6</td>
@@ -12353,8 +12376,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.agriturismodolcesentireassisi.it</td>
       <td>info@agriturismodolcesentireassisi.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>4</td>
       <td>10</td>
       <td>4</td>
@@ -12377,8 +12400,8 @@ a.anchor-link {
       <td>075813683</td>
       <td>www.agriturismoilcastello.com</td>
       <td>info@agriturismoilcastello.com</td>
-      <td>2.329871e+06</td>
-      <td>4.773312e+06</td>
+      <td>2329870.60</td>
+      <td>4773312.45</td>
       <td>9</td>
       <td>18</td>
       <td>9</td>
@@ -12401,8 +12424,8 @@ a.anchor-link {
       <td>075813449</td>
       <td>www.agriturismoilgirasole.net</td>
       <td>info@agriturismoilgirasole.net</td>
-      <td>2.321257e+06</td>
-      <td>4.772125e+06</td>
+      <td>2321257.34</td>
+      <td>4772124.77</td>
       <td>5</td>
       <td>10</td>
       <td>5</td>
@@ -12425,8 +12448,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>agri.grottino@gmail.com</td>
-      <td>2.321257e+06</td>
-      <td>4.772125e+06</td>
+      <td>2321257.34</td>
+      <td>4772124.77</td>
       <td>6</td>
       <td>10</td>
       <td>4</td>
@@ -12449,8 +12472,8 @@ a.anchor-link {
       <td>0758038806</td>
       <td>www.agriturismoilpodere.com</td>
       <td>agriturismoilpodereassisi@gmail.com</td>
-      <td>2.319533e+06</td>
-      <td>4.775286e+06</td>
+      <td>2319532.99</td>
+      <td>4775286.41</td>
       <td>5</td>
       <td>10</td>
       <td>5</td>
@@ -12473,8 +12496,8 @@ a.anchor-link {
       <td>075813386</td>
       <td>www.agriturismolacantina.it</td>
       <td>agri.lacantina@alice.it</td>
-      <td>2.322845e+06</td>
-      <td>4.772253e+06</td>
+      <td>2322844.99</td>
+      <td>4772253.12</td>
       <td>9</td>
       <td>23</td>
       <td>11</td>
@@ -12497,8 +12520,8 @@ a.anchor-link {
       <td>0758041164</td>
       <td>www.agriturismolamora.com</td>
       <td>agriturismolamora@gmail.com</td>
-      <td>2.319089e+06</td>
-      <td>4.776785e+06</td>
+      <td>2319089.32</td>
+      <td>4776785.14</td>
       <td>11</td>
       <td>29</td>
       <td>10</td>
@@ -12521,8 +12544,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.agriturismolapalazzetta.com</td>
       <td>info@agriturismolapalazzetta.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>6</td>
       <td>19</td>
       <td>7</td>
@@ -12545,8 +12568,8 @@ a.anchor-link {
       <td>075813482</td>
       <td>www.agriturismolapanoramica.it</td>
       <td>info@agriturismolapanoramica.it</td>
-      <td>2.321257e+06</td>
-      <td>4.772125e+06</td>
+      <td>2321257.34</td>
+      <td>4772124.77</td>
       <td>8</td>
       <td>20</td>
       <td>9</td>
@@ -12569,8 +12592,8 @@ a.anchor-link {
       <td>075816231</td>
       <td>www.lapiaggia.it</td>
       <td>info@lapiaggia.it</td>
-      <td>2.324938e+06</td>
-      <td>4.771743e+06</td>
+      <td>2324937.76</td>
+      <td>4771743.07</td>
       <td>6</td>
       <td>12</td>
       <td>6</td>
@@ -12593,8 +12616,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.agristar.it</td>
       <td>info@agristar.it</td>
-      <td>2.320907e+06</td>
-      <td>4.778016e+06</td>
+      <td>2320907.10</td>
+      <td>4778015.62</td>
       <td>5</td>
       <td>12</td>
       <td>5</td>
@@ -12617,8 +12640,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.lecase.biz</td>
       <td>assisiresort1@gmail.com</td>
-      <td>2.333097e+06</td>
-      <td>4.777327e+06</td>
+      <td>2333097.48</td>
+      <td>4777327.43</td>
       <td>20</td>
       <td>30</td>
       <td>19</td>
@@ -12641,8 +12664,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>mar.stoppini@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>3</td>
       <td>10</td>
       <td>3</td>
@@ -12665,8 +12688,8 @@ a.anchor-link {
       <td>0759869562</td>
       <td>www.agriturismolongetti.com</td>
       <td>webmaster@agriturismolongetti.com</td>
-      <td>2.324371e+06</td>
-      <td>4.774724e+06</td>
+      <td>2324371.22</td>
+      <td>4774723.95</td>
       <td>9</td>
       <td>15</td>
       <td>9</td>
@@ -12689,8 +12712,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>info@assisium.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>1</td>
       <td>2</td>
       <td>1</td>
@@ -12713,8 +12736,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>2.326030e+06</td>
-      <td>4.771374e+06</td>
+      <td>2326029.62</td>
+      <td>4771374.35</td>
       <td>4</td>
       <td>9</td>
       <td>4</td>
@@ -12737,8 +12760,8 @@ a.anchor-link {
       <td>0758064506</td>
       <td>www.agriturismosoleluna.it</td>
       <td>info@agriturismosoleluna.it</td>
-      <td>2.330640e+06</td>
-      <td>4.773009e+06</td>
+      <td>2330640.27</td>
+      <td>4773009.24</td>
       <td>6</td>
       <td>23</td>
       <td>7</td>
@@ -12761,8 +12784,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>alcasalelagerla@libero.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>3</td>
       <td>7</td>
       <td>3</td>
@@ -12785,8 +12808,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.alcasalino.it</td>
       <td>alcasalino@alice.it</td>
-      <td>2.325881e+06</td>
-      <td>4.771476e+06</td>
+      <td>2325880.82</td>
+      <td>4771475.66</td>
       <td>1</td>
       <td>2</td>
       <td>1</td>
@@ -12809,8 +12832,8 @@ a.anchor-link {
       <td>075816362</td>
       <td>www.alpiandassisi.it</td>
       <td>info@alpiandassisi.it</td>
-      <td>2.326030e+06</td>
-      <td>4.771374e+06</td>
+      <td>2326029.62</td>
+      <td>4771374.35</td>
       <td>4</td>
       <td>7</td>
       <td>4</td>
@@ -12857,8 +12880,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.pennarossaranch.it</td>
       <td>penna.rossa.ranch.bordoni@gmail.com</td>
-      <td>2.331629e+06</td>
-      <td>4.715943e+06</td>
+      <td>2331629.09</td>
+      <td>4715943.45</td>
       <td>2</td>
       <td>6</td>
       <td>2</td>
@@ -12881,8 +12904,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>susanna.santarelli@tiscali.it</td>
-      <td>2.327077e+06</td>
-      <td>4.717789e+06</td>
+      <td>2327076.99</td>
+      <td>4717788.59</td>
       <td>1</td>
       <td>8</td>
       <td>3</td>
@@ -12905,8 +12928,8 @@ a.anchor-link {
       <td>0744 283395</td>
       <td>NaN</td>
       <td>info@frantoiopistelli.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>5</td>
       <td>9</td>
       <td>5</td>
@@ -12929,8 +12952,8 @@ a.anchor-link {
       <td>0744/4424222</td>
       <td>www.residencebizzoni.it</td>
       <td>info@residencebizzoni.it</td>
-      <td>2.326430e+06</td>
-      <td>4.714911e+06</td>
+      <td>2326429.98</td>
+      <td>4714911.46</td>
       <td>14</td>
       <td>36</td>
       <td>16</td>
@@ -12953,8 +12976,8 @@ a.anchor-link {
       <td>0744/368550</td>
       <td>NaN</td>
       <td>residencealbornoz@tiscali.it</td>
-      <td>2.337617e+06</td>
-      <td>4.711848e+06</td>
+      <td>2337616.57</td>
+      <td>4711848.04</td>
       <td>7</td>
       <td>14</td>
       <td>7</td>
@@ -12977,8 +13000,8 @@ a.anchor-link {
       <td>0744226642</td>
       <td>www.residencediamanterosso.it</td>
       <td>info@residencediamanterosso.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>25</td>
       <td>68</td>
       <td>25</td>
@@ -13001,8 +13024,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.residenceviviverde.it</td>
       <td>viviverdesrl@pec.it;info@residenceviviverde.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>8</td>
       <td>25</td>
       <td>8</td>
@@ -13025,8 +13048,8 @@ a.anchor-link {
       <td>0744404318</td>
       <td>www.residenzacerqueto.it</td>
       <td>nardiarch@tiscali.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>14</td>
       <td>25</td>
       <td>14</td>
@@ -13049,8 +13072,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>serenazampolini@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>2</td>
       <td>4</td>
       <td>2</td>
@@ -13073,8 +13096,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>rossierossibedandbreakfast@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>3</td>
       <td>6</td>
       <td>2</td>
@@ -13097,8 +13120,8 @@ a.anchor-link {
       <td>0744812609</td>
       <td>NaN</td>
       <td>valledegliuliviterni@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>2</td>
       <td>4</td>
       <td>2</td>
@@ -13121,8 +13144,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>info@ventotragliulivi.com</td>
-      <td>2.330497e+06</td>
-      <td>4.717644e+06</td>
+      <td>2330496.66</td>
+      <td>4717644.47</td>
       <td>3</td>
       <td>6</td>
       <td>3</td>
@@ -13145,8 +13168,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>eugen.mano30@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>1</td>
       <td>2</td>
       <td>1</td>
@@ -13169,8 +13192,8 @@ a.anchor-link {
       <td>0744815309</td>
       <td>www.villalauraresidence.it</td>
       <td>info@villalauraresidence.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>5</td>
       <td>25</td>
       <td>5</td>
@@ -13193,8 +13216,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>infovillamafalda@alice.it</td>
-      <td>2.324698e+06</td>
-      <td>4.712171e+06</td>
+      <td>2324698.05</td>
+      <td>4712171.48</td>
       <td>3</td>
       <td>6</td>
       <td>2</td>
@@ -13217,8 +13240,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>lallolucia06@libero.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>2</td>
       <td>5</td>
       <td>2</td>
@@ -13241,8 +13264,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>villasabatini_bb@yahoo.it</td>
-      <td>2.332529e+06</td>
-      <td>4.713161e+06</td>
+      <td>2332529.27</td>
+      <td>4713161.40</td>
       <td>3</td>
       <td>8</td>
       <td>3</td>
@@ -13265,8 +13288,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.agriturismoilmannello.eu</td>
       <td>info@agriturismoilmannello.eu</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>1</td>
       <td>8</td>
       <td>4</td>
@@ -13289,8 +13312,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>mariocarita@virgilio.it</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>1</td>
       <td>4</td>
       <td>1</td>
@@ -13313,8 +13336,8 @@ a.anchor-link {
       <td>0744441489</td>
       <td>NaN</td>
       <td>agriturismopianogrande@virgilio.it</td>
-      <td>2.308998e+06</td>
-      <td>4.725760e+06</td>
+      <td>2308997.53</td>
+      <td>4725760.50</td>
       <td>6</td>
       <td>20</td>
       <td>9</td>
@@ -13337,8 +13360,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.sismano.com</td>
       <td>info@sismano.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>5</td>
       <td>10</td>
       <td>5</td>
@@ -13361,8 +13384,8 @@ a.anchor-link {
       <td>0744935272</td>
       <td>www.iciclamini.it</td>
       <td>daniela@cetmusic.it;</td>
-      <td>2.302835e+06</td>
-      <td>4.726356e+06</td>
+      <td>2302835.34</td>
+      <td>4726356.19</td>
       <td>58</td>
       <td>145</td>
       <td>64</td>
@@ -13385,8 +13408,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>2.310454e+06</td>
-      <td>4.729405e+06</td>
+      <td>2310454.27</td>
+      <td>4729404.62</td>
       <td>3</td>
       <td>15</td>
       <td>4</td>
@@ -13409,8 +13432,8 @@ a.anchor-link {
       <td>0744935277</td>
       <td>NaN</td>
       <td>daniela@cetmusic.it</td>
-      <td>2.309140e+06</td>
-      <td>4.725331e+06</td>
+      <td>2309140.02</td>
+      <td>4725331.00</td>
       <td>3</td>
       <td>10</td>
       <td>3</td>
@@ -13433,8 +13456,8 @@ a.anchor-link {
       <td>0744935018</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>2.302344e+06</td>
-      <td>4.724822e+06</td>
+      <td>2302344.15</td>
+      <td>4724821.89</td>
       <td>1</td>
       <td>4</td>
       <td>3</td>
@@ -13457,8 +13480,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>www.lafortezzaalta.com</td>
       <td>info@lafortezzaalta.it</td>
-      <td>2.309682e+06</td>
-      <td>4.727687e+06</td>
+      <td>2309681.72</td>
+      <td>4727686.78</td>
       <td>4</td>
       <td>19</td>
       <td>5</td>
@@ -13481,8 +13504,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>marsilianipietro@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>6</td>
       <td>12</td>
       <td>6</td>
@@ -13505,8 +13528,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>marsilianipietro@gmail.com</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>nan</td>
+      <td>nan</td>
       <td>3</td>
       <td>8</td>
       <td>3</td>
@@ -13529,8 +13552,8 @@ a.anchor-link {
       <td>NaN</td>
       <td>NaN</td>
       <td>lebandite@alice.it</td>
-      <td>2.310352e+06</td>
-      <td>4.727135e+06</td>
+      <td>2310351.66</td>
+      <td>4727135.38</td>
       <td>4</td>
       <td>12</td>
       <td>4</td>
@@ -13553,8 +13576,8 @@ a.anchor-link {
       <td>0744933555</td>
       <td>www.piandellerose.it</td>
       <td>ciatticatozzi@alice.it; info@piandellerose.it</td>
-      <td>2.309112e+06</td>
-      <td>4.725307e+06</td>
+      <td>2309111.96</td>
+      <td>4725307.06</td>
       <td>3</td>
       <td>10</td>
       <td>3</td>
@@ -17105,12 +17128,14 @@ Name: COMUNE, Length: 92, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Campi-geografici:-COORDX-e-COORDY-ovvero-latitudine-e-longitudine:">Campi geografici: COORDX e COORDY ovvero latitudine e longitudine:<a class="anchor-link" href="#Campi-geografici:-COORDX-e-COORDY-ovvero-latitudine-e-longitudine:">&#182;</a></h3><p>I dati geografici su DAF devono rispettare la codifica WGS84 (EPSG:4326) in modo da poter essere visualizzati dai tool che la piattaforma mette a disposizione</p>
+<h3 id="Campi-geografici:-COORDX-e-COORDY">Campi geografici: COORDX e COORDY<a class="anchor-link" href="#Campi-geografici:-COORDX-e-COORDY">&#182;</a></h3><p>I dati geografici su DAF devono rispettare la codifica WGS84 (EPSG:4326) in modo da poter essere visualizzati dai tool che la piattaforma mette a disposizione</p>
 <p>Nel dataset delle strutture ricettive <strong>non</strong> è indicato il tipo di formato usato.</p>
 <p>In questo caso è necessario capire in quale formato sono espressi e convertire in WSG84</p>
 <p>Per effettuare "operazioni geografiche" sui dataset abbiamo a disposizione la libreria <a href="http://geopandas.org/gallery/create_geopandas_from_pandas.html#sphx-glr-gallery-create-geopandas-from-pandas-py"><strong>geopandas</strong></a></p>
 <p>/home/d_mc/EDUC/eventi/eventi_e_manifestazioni_umbria</p>
 <p><a href="http://www.geoin.it/coordinate_converter/">Link utile per convertire coordinate</a></p>
+<p>CRS: Coordinate Reference Systems</p>
+<p><a href="http://spatialreference.org/">http://spatialreference.org/</a></p>
 
 </div>
 </div>
@@ -17422,6 +17447,57 @@ Name: Coordinate, dtype: object</pre>
 </div>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check original projection</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">strutture_geo</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
+
+<span class="c1"># Visualize</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">strutture_geo</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;WGS84 (lat/lon)&quot;</span><span class="p">);</span>
+
+<span class="c1"># Reproject to Mercator (after dropping Antartica)</span>
+<span class="n">world</span> <span class="o">=</span> <span class="n">strutture_geo</span><span class="p">[(</span><span class="n">strutture_geo</span><span class="o">.</span><span class="n">COMUNE</span> <span class="o">==</span> <span class="s2">&quot;ASSISI&quot;</span><span class="p">)]</span>
+
+<span class="n">world</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">to_crs</span><span class="p">({</span><span class="s1">&#39;init&#39;</span><span class="p">:</span> <span class="s1">&#39;epsg:3395&#39;</span><span class="p">})</span> <span class="c1"># world.to_crs(epsg=3395) would also work</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Mercator&quot;</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-99-6e703d0f6170&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">6</span>
+<span class="ansi-red-fg">    In [3]: ax = strutture_geo.plot()</span>
+          ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
 </div>
 
 </div>
