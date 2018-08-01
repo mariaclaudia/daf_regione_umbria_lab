@@ -9,7 +9,7 @@ Check requirements.txt
 
 ## Authors
 
-* **Maria Claudia Bodino** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Maria Claudia Bodino** 
 
 ## License
 
